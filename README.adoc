@@ -1,0 +1,9 @@
+== Basic Service written in Go
+
+This is a minimal web service as a container.
+
+The container image from the self-building Dockerfile will listen on the host:port defined by the environment variable `LISTEN_ADDR`, by default `:8080` which is all interfaces on port 8080
+
+The greeting provided by the app can be customized with the `CUSTOM_GREETING` environment from the default of `Hello`
+
+Greetings are served using HTTP to all sub-urls on the listen address
